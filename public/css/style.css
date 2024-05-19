@@ -1,0 +1,68 @@
+body {
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: white;
+    margin: 0;
+}
+
+.container-login,
+.container-register {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+.navbar {
+    background-color: #15670f;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    top: 0;
+}
+
+.footer {
+    background-color: #15670f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+table {
+    background-color: EEF4ED;
+    color: white;
+}
+
+.img-bands {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.msg {
+        color: green;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+    }
+
