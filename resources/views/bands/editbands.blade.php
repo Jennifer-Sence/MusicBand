@@ -25,10 +25,7 @@
             <label for="name">Nome da Banda</label>
             <input type="text" class="form-control" id="name" name="name" value="{{ $banda->name }}" required>
         </div>
-        <div class="form-group">
-            <label for="albums_count">Número de Álbuns Criados</label>
-            <input type="number" class="form-control" id="albums_count" name="albums_count" value="{{ $banda->albums_count }}" >
-        </div>
+       
         <div class="form-group">
             <label for="photo">Foto da Banda</label>
             <input type="file" class="form-control-file" id="photo" name="photo">

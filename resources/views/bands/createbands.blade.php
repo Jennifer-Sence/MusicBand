@@ -25,11 +25,6 @@
         @enderror
     </div>
 
-    <div class="form-group">
-        <label for="albums_count">Número de Álbuns Criados</label>
-        <input type="number" class="form-control" id="albums_count" name="albums_count" required>
-    </div>
-
     <button type="submit" class="btn btn-primary">Criar Nova Banda</button>
 
 </form>

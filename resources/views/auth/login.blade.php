@@ -14,6 +14,8 @@
                 <input type="password" name="password" class="form-control" id="exampleInputPassword1">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+            <br>
+            <a href="{{ route('password.request')}}">Esqueceu-se da pass?</a>
         </form>
     </div>
 @endsection

@@ -26,7 +26,7 @@
                             <img class="img-bands"
                                 src="{{ $banda->photo ? asset('storage/' . $banda->photo) : asset('img/nophoto.jpg') }}">
                         </td>
-                        <td>{{ $banda->albums_count }}</td>
+                        <td>{{$banda->albums_count}}</td>
                         <td>
                             <a href="{{ route('albuns.show', $banda->id) }}" class="btn btn-primary btn-sm">Ver Álbuns</a>
                             <br>

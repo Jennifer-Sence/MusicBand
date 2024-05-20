@@ -37,6 +37,16 @@ class FortifyServiceProvider extends ServiceProvider
             return view('users.create-users');
         });
 
+        Fortify::requestPasswordResetLinkView(function () {
+            return view('auth.forgot-password');
+        });
+
+        Fortify::resetPasswordView(function (Request $request) {
+            return view('auth.reset-password', ['request' => $request]);
+        });
+
+
+
         Fortify::createUsersUsing(CreateNewUser::class);
         Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);

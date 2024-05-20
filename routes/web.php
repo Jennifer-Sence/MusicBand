@@ -6,9 +6,9 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\DashboardController;
 
-//Rotas bandas ---ver isso
+//Rotas bandas ---ver isso com a Sara
 Route::get('/', [BandController::class, 'index' ])->name('band.index');
-Route::get('/home', [BandController::class, 'index' ])->name('band.index');
+Route::get('/home', [BandController::class, 'index' ])->name('band.index')->middleware('auth');
 
 Route::get('/bands/create', [BandController::class, 'create'])->name('bands.create')->middleware('auth');
 Route::post('/bands/store', [BandController::class, 'store'])->name('bands.store')->middleware('auth');

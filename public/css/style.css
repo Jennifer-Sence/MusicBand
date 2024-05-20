@@ -19,14 +19,26 @@ body {
     width: 100%;
     max-width: 400px;
     margin: 20px;
+    color: black;
 }
+
 
 .form-label {
     font-weight: bold;
+    color: black;
 }
 
-.btn-primary {
-    width: 100%;
+.form-group{
+    color: black;
+}
+
+.btn-primary, .btn-warning, .btn-danger, .btn-success {
+    font-size: 10px;
+    width: 50px;
+    height: 40px;
+    padding-bottom: 5px;
+    margin: 5px;
+    text-align: center;
 }
 
 .navbar {
@@ -64,5 +76,6 @@ table {
         font-weight: bold;
         margin-top: 20px;
         text-align: center;
+        border-color: black;
     }
 
