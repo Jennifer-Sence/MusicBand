@@ -10,13 +10,12 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-   // Show the registration form
    public function showRegistrationForm()
    {
        return view('users.create-user');
    }
 
-   // Handle the registration form submission
+
    public function register(Request $request)
    {
        $request->validate([

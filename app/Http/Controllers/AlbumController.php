@@ -28,7 +28,8 @@ class AlbumController extends Controller
         $validatedData = $request->validate([
             'title' => 'required|string|max:255',
             'band_id' => 'required|integer',
-            'cover_url' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
+            'cover_url' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'release_date'=>'nullable'
         ]);
 
         $cover_url = null;
@@ -40,6 +41,7 @@ class AlbumController extends Controller
         $album->title = $request->title;
         $album->band_id = $request->band_id;
         $album->cover_url = $cover_url;
+        $album->release_date = $request->release_date;
         $album->save();
 
         return redirect('/home')->with('msg', 'Album criado com sucesso!');
